@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- favicon icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        /* body */
+        
+        body {
+            background-color: hsl(185, 75%, 39%);
+            font-family: 'Kumbh Sans', sans-serif;
+            font-size: 1.125rem;
+            line-height: 2px;
+            overflow-x: hidden;
+            background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+            background-repeat: no-repeat, no-repeat;
+            background-position: top left, bottom right;
+        }
+        
+        .container {
+            margin: 10% auto;
+            padding: 10% 0 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 1rem;
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        .card {
+            background-color: #fff;
+            margin: auto;
+            width: 350px;
+            height: 350px;
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            min-width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-direction: column;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .text-img {
+            align-items: center;
+            background-image: url(./images/bg-pattern-card.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            padding-top: 76px;
+            width: 100%;
+        }
+        
+        .text {
+            background-color: #fff;
+            border-top: 1px solid hsl(0, 0%, 50%);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        
+        .victor {
+            border: 5px solid #fff;
+            border-radius: 100%;
+            position: absolute;
+            top: 100px;
+            left: 125px;
+        }
+        
+        .crest {
+            margin-top: 160px;
+        }
+        
+        .top,
+        .middle,
+        .bottom {
+            text-align: center;
+            padding: 15px 20px;
+        }
+        /* footer */
+        
+        .attribution a {
+            text-decoration: none;
+            color: hsl(228, 45%, 44%);
+        }
+        
+        .attribution a:hover {
+            color: #16697a;
+        }
+        
+        .attribution {
+            color: #fff;
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        @media screen and (max-width:375px) {
+            .card {
+                width: 95%;
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- body -->
+    <div class="container">
+
+
+
+
+        <div class="card">
+            <div class="text-img">
+                <img class="victor" src="images/image-victor.jpg" alt="Victor Crest">
+                <p class="crest"><b>Victor Crest</b> 26</p>
+                <p>London</p>
+            </div>
+
+
+
+            <div class="text">
+
+                <div class="top">
+                    <h3><b>80K</b></h3>
+                    <p>Followers</p>
+                </div>
+
+                <div class="middle">
+                    <h3><b>803K</b></h3>
+                    <p>Likes</p>
+                </div>
+
+                <div class="bottom">
+                    <h3><b>1.4K</b></h3>
+                    <p>Photos</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- footer -->
+    <div class="attribution">
+        <h5>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</h5>
+        <h5>Coded by <a href="https://bethanygold.github.io/CV2/" target="_blank">Bethel-Gold</a>.</h5>
+    </div>
+
+
+
+</body>
+
+</html>
